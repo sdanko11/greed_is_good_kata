@@ -1,7 +1,6 @@
 def score(dice)
   score = 0
-  unique_dice = dice.uniq
-  unique_dice.each do |roll|
+  dice.uniq.each do |roll|
     count = dice.count(roll)
     if roll == 1
       score += (1000 * (count/3))
